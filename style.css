@@ -1,0 +1,83 @@
+/* Genel ayarlar */
+body{
+  background:#0f172a;
+  color:white;
+  font-family:Arial, Helvetica, sans-serif;
+  text-align:center;
+  margin:0;
+  padding:20px;
+}
+
+/* Başlık */
+h1{
+  font-size:42px;
+  margin-top:40px;
+}
+
+p{
+  opacity:0.7;
+  font-size:18px;
+}
+
+/* Buton grid */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:25px;
+  max-width:400px;
+  margin:40px auto;
+}
+
+/* Buton tasarımı */
+a{
+  background:#1e293b;
+  padding:40px 10px;
+  text-decoration:none;
+  color:white;
+  border-radius:18px;
+  font-size:22px;
+  transition:0.3s;
+}
+
+a:hover{
+  background:#38bdf8;
+  transform:scale(1.05);
+}
+
+/* 📱 MOBİL TASARIM */
+@media (max-width:600px){
+
+  h1{
+    font-size:32px;
+  }
+
+  p{
+    font-size:16px;
+  }
+
+  .grid{
+    grid-template-columns:1fr; /* butonlar alt alta */
+    max-width:280px;
+  }
+
+  a{
+    font-size:20px;
+    padding:30px 10px;
+  }
+
+}
+/* Kart içini mükemmel ortalama (Badezimmer sorunu çözülür) */
+.grid a{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  min-height:140px;
+}
+
+/* Alt yazı tasarımı */
+.footer{
+  margin-top:60px;
+  opacity:0.6;
+  font-size:14px;
+}
